@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D6EB72A-9D25-4E59-A2C7-2A1396A679BC}</ProjectGuid>
+    <RootNamespace>DesktopOfWuxia</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\Debug</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\Release</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.;..\Common\;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;CURL_STATICLIB;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\Debug\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DuiLib_ud.lib;json_vc71_libmtd.lib;libcurld_old.lib;Wldap32.lib;ws2_32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>.;..\Common\;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_NDEBUG;CURL_STATICLIB;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\Release\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>DuiLib_u.lib;json_vc71_libmt.lib;libcurl_old.lib;Wldap32.lib;ws2_32.lib;version.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\common.cpp" />
+    <ClCompile Include="..\Common\json\JsonHelper.cpp" />
+    <ClCompile Include="..\Common\Logger.cpp" />
+    <ClCompile Include="..\Common\Util\ATW.cpp" />
+    <ClCompile Include="..\Common\Util\Base64Encoder.cpp" />
+    <ClCompile Include="..\Common\Util\BaseFile.cpp" />
+    <ClCompile Include="..\Common\Util\Conversation.CPP" />
+    <ClCompile Include="..\Common\Util\HotKeyParser.cpp" />
+    <ClCompile Include="..\Common\Util\HttpClient.cpp" />
+    <ClCompile Include="..\Common\Util\HWnd.cpp" />
+    <ClCompile Include="..\Common\Util\MAC.CPP" />
+    <ClCompile Include="..\Common\Util\MD5.cpp" />
+    <ClCompile Include="..\Common\Util\STAES.cpp" />
+    <ClCompile Include="GameInfo\BaseInfo.cpp" />
+    <ClCompile Include="GameInfo\Item.cpp" />
+    <ClCompile Include="GameInfo\Map.cpp" />
+    <ClCompile Include="GameInfo\Npc.cpp" />
+    <ClCompile Include="GameInfo\Object.cpp" />
+    <ClCompile Include="GameInfo\Room.cpp" />
+    <ClCompile Include="GameInfo\Skill.cpp" />
+    <ClCompile Include="GameInfo\User.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="Object\Interface.cpp" />
+    <ClCompile Include="Object\Parser.cpp" />
+    <ClCompile Include="Object\Router.cpp" />
+    <ClCompile Include="statistic\ClientStatistic.cpp" />
+    <ClCompile Include="statistic\ConfigManager.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Wnd\BaseWnd.cpp" />
+    <ClCompile Include="Wnd\ChatWnd.cpp" />
+    <ClCompile Include="Wnd\ListWnd.cpp" />
+    <ClCompile Include="Wnd\LoginThirdWnd.cpp" />
+    <ClCompile Include="Wnd\LoginWnd.cpp" />
+    <ClCompile Include="Wnd\MapWnd.cpp" />
+    <ClCompile Include="Wnd\PopupWnd.cpp" />
+    <ClCompile Include="Wnd\RoleInfoWnd.cpp" />
+    <ClCompile Include="Wnd\RoleWnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\common.h" />
+    <ClInclude Include="..\Common\json\autolink.h" />
+    <ClInclude Include="..\Common\json\config.h" />
+    <ClInclude Include="..\Common\json\features.h" />
+    <ClInclude Include="..\Common\json\forwards.h" />
+    <ClInclude Include="..\Common\json\json.h" />
+    <ClInclude Include="..\Common\json\JsonHelper.h" />
+    <ClInclude Include="..\Common\json\reader.h" />
+    <ClInclude Include="..\Common\json\value.h" />
+    <ClInclude Include="..\Common\json\writer.h" />
+    <ClInclude Include="..\Common\Logger.h" />
+    <ClInclude Include="..\Common\Util\ATW.h" />
+    <ClInclude Include="..\Common\Util\Base64Encoder.h" />
+    <ClInclude Include="..\Common\Util\BaseFile.h" />
+    <ClInclude Include="..\Common\Util\Conversation.H" />
+    <ClInclude Include="..\Common\Util\HotKeyParser.h" />
+    <ClInclude Include="..\Common\Util\HttpClient.h" />
+    <ClInclude Include="..\Common\Util\HWnd.h" />
+    <ClInclude Include="..\Common\Util\MAC.H" />
+    <ClInclude Include="..\Common\Util\MD5.h" />
+    <ClInclude Include="..\Common\Util\STAES.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="GameInfo\BaseInfo.h" />
+    <ClInclude Include="GameInfo\Item.h" />
+    <ClInclude Include="GameInfo\Map.h" />
+    <ClInclude Include="GameInfo\Npc.h" />
+    <ClInclude Include="GameInfo\Object.h" />
+    <ClInclude Include="GameInfo\Room.h" />
+    <ClInclude Include="GameInfo\Skill.h" />
+    <ClInclude Include="GameInfo\User.h" />
+    <ClInclude Include="MainFrame.h" />
+    <ClInclude Include="Object\Interface.h" />
+    <ClInclude Include="Object\Parser.h" />
+    <ClInclude Include="Object\Router.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="statistic\ClientStatistic.h" />
+    <ClInclude Include="statistic\ConfigManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Wnd\BaseWnd.h" />
+    <ClInclude Include="Wnd\ChatWnd.h" />
+    <ClInclude Include="Wnd\ListWnd.h" />
+    <ClInclude Include="Wnd\LoginThirdWnd.h" />
+    <ClInclude Include="Wnd\LoginWnd.h" />
+    <ClInclude Include="Wnd\MapWnd.h" />
+    <ClInclude Include="Wnd\PopupWnd.h" />
+    <ClInclude Include="Wnd\RoleInfoWnd.h" />
+    <ClInclude Include="Wnd\RoleWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DesktopOfWuxia.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin.zip" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

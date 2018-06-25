@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="应用入口">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="应用窗口">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="功能库">
+      <UniqueIdentifier>{920bf0bc-1d59-454b-b26b-fedf9e4ecc94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="全局文件">
+      <UniqueIdentifier>{754c7d3c-fcf0-4510-91aa-9c4011b531bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="功能库\statistic">
+      <UniqueIdentifier>{b0a94cce-1500-45d0-bb5c-b2feb524e712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="功能库\Util">
+      <UniqueIdentifier>{9ed0dc6e-33b7-4e98-b1f8-f78300e525f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="应用窗口\Object">
+      <UniqueIdentifier>{1fa6030a-9ebb-4f92-9f09-fc9e676ef889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="功能库\json">
+      <UniqueIdentifier>{ee74bf5f-a942-4a3d-b4f4-e385365d681a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="应用窗口\OtherWnd">
+      <UniqueIdentifier>{a6c55242-2fc0-460d-9556-5c2baa8ba949}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="应用窗口\GameWnd">
+      <UniqueIdentifier>{35b0929b-9f0d-4444-bd05-e462d7ecfbde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="应用窗口\GameInfo">
+      <UniqueIdentifier>{f1ab5e94-c853-4ef3-93f6-33c9869e4187}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>应用入口</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>全局文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\common.cpp">
+      <Filter>功能库</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Logger.cpp">
+      <Filter>功能库</Filter>
+    </ClCompile>
+    <ClCompile Include="statistic\ClientStatistic.cpp">
+      <Filter>功能库\statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="statistic\ConfigManager.cpp">
+      <Filter>功能库\statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\ATW.cpp">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\Base64Encoder.cpp">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\BaseFile.cpp">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\Conversation.CPP">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\HotKeyParser.cpp">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\HttpClient.cpp">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\HWnd.cpp">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\MAC.CPP">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\MD5.cpp">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Util\STAES.cpp">
+      <Filter>功能库\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>应用窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Interface.cpp">
+      <Filter>应用窗口\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\json\JsonHelper.cpp">
+      <Filter>功能库\json</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Router.cpp">
+      <Filter>应用窗口\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\Parser.cpp">
+      <Filter>应用窗口\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd\LoginThirdWnd.cpp">
+      <Filter>应用窗口\OtherWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd\LoginWnd.cpp">
+      <Filter>应用窗口\OtherWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd\PopupWnd.cpp">
+      <Filter>应用窗口\OtherWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd\ChatWnd.cpp">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd\ListWnd.cpp">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfo\BaseInfo.cpp">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfo\Room.cpp">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfo\Map.cpp">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfo\Item.cpp">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfo\Npc.cpp">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfo\Object.cpp">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfo\User.cpp">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd\MapWnd.cpp">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="GameInfo\Skill.cpp">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd\RoleWnd.cpp">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd\BaseWnd.cpp">
+      <Filter>应用窗口\OtherWnd</Filter>
+    </ClCompile>
+    <ClCompile Include="Wnd\RoleInfoWnd.cpp">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>全局文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\common.h">
+      <Filter>功能库</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Logger.h">
+      <Filter>功能库</Filter>
+    </ClInclude>
+    <ClInclude Include="statistic\ClientStatistic.h">
+      <Filter>功能库\statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="statistic\ConfigManager.h">
+      <Filter>功能库\statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\ATW.h">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\Base64Encoder.h">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\BaseFile.h">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\Conversation.H">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\HotKeyParser.h">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\HttpClient.h">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\HWnd.h">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\MAC.H">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\MD5.h">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Util\STAES.h">
+      <Filter>功能库\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame.h">
+      <Filter>应用窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Wnd\LoginThirdWnd.h">
+      <Filter>应用窗口\OtherWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Wnd\LoginWnd.h">
+      <Filter>应用窗口\OtherWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>全局文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Interface.h">
+      <Filter>应用窗口\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\json\config.h">
+      <Filter>功能库\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\json\features.h">
+      <Filter>功能库\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\json\forwards.h">
+      <Filter>功能库\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\json\json.h">
+      <Filter>功能库\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\json\JsonHelper.h">
+      <Filter>功能库\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\json\reader.h">
+      <Filter>功能库\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\json\value.h">
+      <Filter>功能库\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\json\writer.h">
+      <Filter>功能库\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\json\autolink.h">
+      <Filter>功能库\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Router.h">
+      <Filter>应用窗口\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\Parser.h">
+      <Filter>应用窗口\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Wnd\PopupWnd.h">
+      <Filter>应用窗口\OtherWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Wnd\ListWnd.h">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Wnd\ChatWnd.h">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo\BaseInfo.h">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo\Room.h">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo\Map.h">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo\Item.h">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo\Npc.h">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo\Object.h">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo\User.h">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Wnd\MapWnd.h">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="GameInfo\Skill.h">
+      <Filter>应用窗口\GameInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Wnd\RoleWnd.h">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Wnd\BaseWnd.h">
+      <Filter>应用窗口\OtherWnd</Filter>
+    </ClInclude>
+    <ClInclude Include="Wnd\RoleInfoWnd.h">
+      <Filter>应用窗口\GameWnd</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DesktopOfWuxia.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Skin.zip">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>
